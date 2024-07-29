@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1 style="color: red;">Welcome to Netflix</h1>
+        <nav>
+            <ul style="list-style-type: none; padding: 0; text-align: center;">
+                <li style="display: inline; margin-right: 15px;"><a href="#home" style="color: #e50914; text-decoration: none;">Home</a></li>
+                <li style="display: inline; margin-right: 15px;"><a href="#shows" style="color: #e50914; text-decoration: none;">Shows</a></li>
+                <li style="display: inline; margin-right: 15px;"><a href="#movies" style="color: #e50914; text-decoration: none;">Movies</a></li>
+                <li style="display: inline;"><a href="#contact" style="color: #e50914; text-decoration: none;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" style="text-align: center;">
+        <h2 style="color: #333;">Stream Your Favorite Movies and TV Shows</h2>
+        <p>Sign up to access a world of entertainment. Watch anytime, anywhere.</p>
+    </section>
+
+    <section id="signup" style="text-align: center;">
+        <h2 style="color: #333;">Sign Up</h2>
+        <form action="/signup" method="post" style="display: inline-block; text-align: left;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit" style="background-color: #e50914; color: white; border: none; padding: 10px 20px; cursor: pointer;">Sign Up</button>
+        </form>
+    </section>
+
+    <section id="shows" style="text-align: center;">
+        <h2 style="color: #333;">Popular Shows</h2>
+        <p>Discover the latest and greatest TV shows available on Netflix.</p>
+        <ul style="list-style-type: none; padding: 0;">
+            <li>Stranger Things</li>
+            <li>The Crown</li>
+            <li>Ozark</li>
+            <li>Money Heist</li>
+        </ul>
+    </section>
+
+    <section id="movies" style="text-align: center;">
+        <h2 style="color: #333;">Popular Movies</h2>
+        <p>Check out some of the top movies you can watch right now.</p>
+        <ul style="list-style-type: none; padding: 0;">
+            <li>The Irishman</li>
+            <li>Marriage Story</li>
+            <li>Bird Box</li>
+            <li>Enola Holmes</li>
+        </ul>
+    </section>
+
+    <section id="contact" style="text-align: center;">
+        <h2 style="color: #333;">Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us.</p>
+        <form action="/contact" method="post" style="display: inline-block; text-align: left;">
+
+            <button type="submit" style="background-color: #e50914; color: white; border: none; padding: 10px 20px; cursor: pointer;">Send Message</button>
+        </form>
+    </section>
+
+    <footer style="text-align: center;">
+        <p>&copy; 2024 Netflix, Inc.</p>
+    </footer>
+</body>
+</html>

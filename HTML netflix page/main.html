@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Example</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .banner {
+            background-color: #e50914; 
+            height: 110px; 
+            color: black;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Bebas Neue', sans-serif; 
+            font-size: 25px;
+            position: relative; 
+            overflow: hidden; 
+        }
+        .sign-up-button {
+            margin: 0;
+            animation: bounce 5s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        .large-image-container {
+            position: relative;
+        }
+        .large-image {
+            width: 100%;
+            height: auto; 
+            display: block; 
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            text-align: center;
+            color: #fff; 
+            margin-top: 100px; 
+        }
+        .overlay-text p {
+            margin: 10px 0;
+            font-size: 18px;
+            font-size: 20px;
+        }
+        .sign-up-button {
+            display: inline-block;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            background-color: #e50914;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 50px;
+            margin-bottom: 479px; 
+            transition: background-color 0.3s ease; 
+        }
+        .sign-up-button:hover {
+            background-color: #f40612;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+        .footer {
+            background-color: #f40612; 
+            color: #000; 
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer a {
+            color: white; /* Red color for links */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>N E T F L I X</h1>
+    </div>
+    <div class="large-image-container">
+        <img class="large-image" src="netflxi bg.jpg" alt="Netflix Background">
+        <div class="overlay-text">
+            <p>Unlimited movies, TV shows and more</p>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <a href="main2.html" class="sign-up-button">Join Now</a>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#https://help.netflix.com/en/contactus">Information</a> |
+        <a href="#https://help.netflix.com/en/contactus">Contact us</a>
+    </div>
+</body>
+</html>
